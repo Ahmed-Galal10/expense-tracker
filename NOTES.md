@@ -1,3 +1,5 @@
+```javascript
+
 1) How did you make the two requests run at the same time? 
 
 I used `Promise.all` so both `fetchCategories` and `fetchInitialExpenses` trigger at the same time instead of waiting for each other:
