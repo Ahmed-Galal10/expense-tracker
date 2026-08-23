@@ -7,6 +7,8 @@ const results = await Promise.all([
   fetchCategories(),
   fetchInitialExpenses()
 ]);
+javascript```
+
 
 If we did it sequentialy using 'awailt 'one by one, it would look like this:
 const categories = await fetchCategories();
