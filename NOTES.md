@@ -1,4 +1,6 @@
 
+
+
 ### 1. How did you make the two requests run at the same time? 
 
 I used `Promise.all` so both `fetchCategories` and `fetchInitialExpenses` trigger at the same time instead of waiting for each other:
@@ -26,3 +28,19 @@ Instead of attaching a separate click listener to each button, i placing one lis
 Why it is better:
 - Easier to manage and uses less memory than registering multiple listeners.
 - The buttons are created dynamically from the API, so one parent listener handles them automatically without re attaching events.
+
+
+
+
+### 3. Multiple Choice Questions
+
+1-C
+2-B
+3-B
+4-A
+5-C
+6-B
+7-B
+8-B
+9-B
+10-B
