@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+
+  <div id="loading">Loading...</div>
+
+  <div id="error" style="display: none;">
+    <p>Network Error</p>
+    <button id="retry-btn">Retry</button>
+  </div>
+
+  <div id="app" style="display: none;">
+    <form id="expense-form">
+      <div>
+        <input type="text" id="desc" placeholder="Description">
+        <span id="desc-error" style="display: none; color: red;">Description cannot be blank</span>
+      </div>
+
+      <div>
+        <input type="number" id="amount" placeholder="Amount" step="0.01">
+        <span id="amount-error" style="display: none; color: red;">It must be a positive amount</span>
+      </div>
+
+      <div>
+        <select id="category"></select>
+      </div>
+
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <div id="filters"></div>
+
+    <p>Count: <span id="count">0</span> | Total: <span id="total">0</span></p>
+
+    <ul id="list"></ul>
+  </div>
+
+</body>
+</html>
