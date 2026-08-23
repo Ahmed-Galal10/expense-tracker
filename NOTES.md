@@ -1,7 +1,4 @@
-
-
-
-### 1. How did you make the two requests run at the same time? 
+1. How did you make the two requests run at the same time? 
 
 I used `Promise.all` so both `fetchCategories` and `fetchInitialExpenses` trigger at the same time instead of waiting for each other:
 
@@ -21,7 +18,7 @@ Because the second request (fetchInitialExpenses) will just sit there waiting un
 By using 'Promise.all', both network calls run in parallel, so the whole process only takes the longest request (500ms).
 
 
-## 2. Why is event delegation a better fit for the category buttons than adding a listener to each one?
+2. Why is event delegation a better fit for the category buttons than adding a listener to each one?
 
 Instead of attaching a separate click listener to each button, i placing one listener on #filters and checked e.target.
 
@@ -32,7 +29,7 @@ Why it is better:
 
 
 
-### 3. Multiple Choice Questions
+3. Multiple Choice Questions
 
 1-C
 2-B
