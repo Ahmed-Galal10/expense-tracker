@@ -12,7 +12,7 @@ const totalElement = document.getElementById('total');
 
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
-  currency: 'USD'
+  currency: 'EGP'
 });
 
 const descInput = document.getElementById('desc');
